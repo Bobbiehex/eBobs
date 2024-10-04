@@ -1,0 +1,95 @@
+fieldset{
+    width: 35%;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: .9em;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+legend{
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+fieldset input, fieldset select, fieldset textarea, fieldset button{
+    display: block;
+    margin-top: 1.2em;
+    margin-bottom: 1.9em;
+    width: 98%;
+    height: 35px;
+    border-radius: 5px;
+    border: .5px solid #999;
+    outline: 0;
+}
+
+fieldset input{
+    padding-left: .8em;
+    /* font-size: large; */
+}
+fieldset button{
+    height: 40px;
+    background: linear-gradient(45deg,  #4d85fe, #0f0160, #4d85fe);
+    color: #fcfcfc;
+}
+fieldset button:hover{
+    height: 40px;
+    background: linear-gradient(45deg, #4d85fe, #0f0160);
+    cursor: pointer;
+}
+
+fieldset div{
+    position: relative;
+}
+fieldset div span{
+    display: block;
+    position: absolute;
+    top: .4em;
+    left: .8em;
+    color: #999;
+    transition: .5s;
+}
+
+fieldset div input:focus ~ span,
+fieldset div input:valid ~ span{
+    top: -1.4em;
+    left: 5px;
+    color: #555;
+}
+
+fieldset p{
+    margin-bottom: 1.2em;
+    font-size: 18px;
+}
+fieldset p a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 830px) {
+    fieldset{
+        width: 35%;
+    }
+}
+@media (max-width: 700px) {
+    fieldset{
+        width: 48%;
+    }
+}
+@media (max-width: 600px) {
+    fieldset{
+        width: 58%;
+    }
+}
+@media (max-width: 500px) {
+    fieldset{
+        width: 68%;
+    }
+}
+@media (max-width: 400px) {
+    fieldset{
+        width: 80%;
+    }
+}

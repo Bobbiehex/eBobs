@@ -1,0 +1,139 @@
+body{
+    max-width: 1600px;
+    min-width: 350px;
+}
+.main_section{
+    background: linear-gradient(90deg, #e0e0e0, #d3cdcd, #053172 80%);
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+}
+.main_section h2{
+    margin-top: 1.6em;
+    font-size: 3em;
+    color: #053172;
+}
+.main_section h3{
+    font-size: 2em;
+    color: #000000;
+}
+.main_section h4{
+    margin-top: .2em;
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #000000;
+}
+
+.main_section button{
+    margin-top: 3em;
+    display: block;
+    border: none;
+    font-size: 16px;
+    padding: .9em 2em .9em 2em;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #0f0160, #135dfd);
+    color: #ffff;
+}
+.main_section button:hover{
+    cursor: pointer;
+    background: linear-gradient(45deg, #135dfd, #0f0160);
+}
+
+@media (max-width:999px) {
+    .main_section{
+    height: 378px;
+    }
+    .main_section img{
+        width: 240px;
+        height: 378px;
+        padding-left: 180px;
+    }
+    
+    .main_section h2{
+        margin-top: 0;
+        padding-top: .5em;
+        font-size: 2.5em;
+        font-weight: 600;
+    
+    }
+    .main_section h3{
+        font-size: 1.9em;
+        font-weight: 500;
+    }
+    .main_section h4{
+        margin-top: .2em;
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .main_section button{
+        font-size: 18px;
+        padding: .6em 2em .6em 2em;
+    }
+}
+
+@media (max-width:840px) {
+    .main_section{
+    height: 300px;
+    }
+    .main_section img{
+        width: 240px;
+        height: 300px;
+        padding-left: 110px;
+    }
+}
+
+@media (max-width:760px) {
+    .main_section{
+    height: 278px;
+    }
+    .main_section img{
+        width: 240px;
+        height: 278px;
+        padding-left: 80px;
+    }
+}
+
+@media (max-width:680px) {
+    .main_section{
+        display: block;
+        margin: auto;
+        background: url("../images/snap.png"),
+        linear-gradient(90deg, #AF9D76, #c5b9b9 60%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main_section2{
+            background: url("../images/ayo.png"),
+            linear-gradient(90deg, #AF9D76, #c5b9b9 60%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+    }
+    .main_section h2, .main_section h3, .main_section h4{
+        color: #fcfcfc;
+    }
+    .main_section div{
+        text-align: center;
+    }
+    .main_section button{
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .main_section img{
+       display: none;
+    }
+    
+}
+
+/* @media (max-width:535px) {
+    .main_section{
+    padding-bottom: 0em;
+    height: 26em;
+    }
+    .main_section img{
+        width: 45%;
+    }
+} */
+

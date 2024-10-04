@@ -1,0 +1,56 @@
+.items_container{
+    width: 95%;
+    margin: auto;
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 2em;
+}
+
+.items_container div{
+    padding-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: #edecec .0em .0em .0em .1em;
+}
+
+.items_container div img{
+    display: block;
+    margin: auto;
+    width: 240px;
+    height: 260px;
+    border-radius: 5px;
+}
+.items_container div h3, .items_container div h4{
+    text-align: center;
+}
+.items_container div h3{
+    margin-top: .9em;
+    font-weight: 400;
+}
+.items_container div h4{
+    margin-top: .5em;
+    font-weight: 300;
+}
+.old_price{
+    display: inline-block;
+    text-decoration: line-through;
+    margin-left: .5em;
+    color: #fd9292;
+}
+
+.items_container div button{
+    display: block;
+    margin: auto;
+    margin-top: .7em;
+    width: 150px;
+    border: #4d85fe 1px solid;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: transparent;
+    padding: .6em;
+    color: #443901;
+}
+
+.items_container div button:hover{
+    background: linear-gradient(45deg, #0f0160, #4d85fe);
+}

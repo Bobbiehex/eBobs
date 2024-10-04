@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #eaf2fd;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin: .5em;
+    border-radius: 8px;
+}
+li{
+    display: inline-block;
+}
+li a{
+    display: inline-block;
+    padding: 7px 16px 9px 16px;
+    /* background-color: #3086fe; */
+    border-radius: 2px solid transparent;
+    text-decoration: none;
+    color: #022353;
+    font-size: 16px;
+}
+
+li a:hover{
+    /* background-color: #3086fe;
+    text-decoration: underline; */
+    border-radius: 20px;
+    border-bottom: #022353 1px solid;
+}
+.mobile_menu_icon{
+    position: absolute;
+    width: 25px;
+    height: 17px;
+    right: 5px;
+    display: none;
+}
+.mobile_menu_icon p{
+    width: 20px;
+    height: 1.1px;
+    border-radius: 45px;
+    background-color: #022353;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+
+.cart{
+    position: relative;
+}
+.cart img{
+    width: 20px;
+}
+.mobile_menu_icon_add_at_runtime{
+    top: 13px;
+}
+.top_line_add_at_runtime{
+   display: none;
+}
+.middle_line_add_at_runtime{
+    position: absolute;
+    transform: rotate(45deg);
+}
+.bottom_line_add_at_runtime{
+    transform: rotate(-45deg);
+}
+.items_on_cart{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #ff0000;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 11px;
+    color: #fcfcfc;
+}
+.search_icon{
+    position: absolute;
+    top: 18px;
+    width: 50px;
+    height: 50px;    
+}
+.search_icon img{
+    width: 24px;
+}
+.search_icon:hover{
+    border-radius: 50%;
+    border-radius: 20px;
+    border-bottom: transparent 1px solid;
+    background-color: #e9e8e8;
+}
+.search_icon img:hover{
+    opacity: .4;
+    cursor: pointer;
+}
+
+.search_bar{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    /* background-color: #838383; */
+    padding: .4em;
+    display: none;
+    z-index: 12;
+}
+.search_bar input{
+    display: block;
+    margin: auto;
+    padding: .4em;
+    width: 90%;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background-color: #a7a5a5;
+    color: #fcfcfc;
+    font-size: 22px;
+    text-align: center;
+}
+.search_bar button{
+    display: block;
+    position: absolute;
+    top: -26px;
+    right: -17px;
+    padding: .4em;
+    background-color: transparent;
+    border: 0;
+    font-size: 50px;
+    color: #fcfcfc;
+}
+.search_bar button:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+.drop_down{
+    position: relative;
+}
+.drop_down:hover div{
+    display: block;
+}
+.drop_down a:hover{
+    border-bottom: 1px solid transparent;
+}
+.drop_down div{
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    z-index: 12;
+}
+.drop_down div a{
+    display: block;
+    border-radius: o;
+    border: 1px solid transparent;
+}
+.drop_down div a:hover{
+    background-color: #e2e1e1;
+}
+@media (max-width:950px) {
+    .mobile_menu_icon{
+        display: block;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+    }
+    ul{
+        position: absolute;
+        background-color: #fcfcfc;
+        padding-top: 29px;
+        width: 100%;
+        top: 30px;
+        left: -80em;
+        min-width: 350px;
+        /* display: none; */
+        padding-bottom: 1em;
+        z-index: 4;
+        transition: .7s;
+    }
+    ul li{
+        display: block;
+    }
+    ul li a{
+        display: block;
+        
+        font-size: 16px;
+        padding: 4px 6px 10px 6px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .right_side_menu li a{
+        font-size: 12px!important;
+        padding: 0 0px 6px 9px;
+    }
+
+    .search_icon{
+        top: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    .search_icon img{
+        width: 20px;
+    }
+
+}
